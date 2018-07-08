@@ -1,0 +1,411 @@
+
+<!Doctype html>
+	<html lang=”pt-br”>
+		<head>
+			<title>Site The Walking Dead Responsivo</title>
+             <link rel="stylesheet" type="text/css" href="estilo.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        </head>
+        
+
+        <body>
+     <div class="wrapper">  
+           
+<header> <h2>Site Serviços de Carros Compartilhados Responsivo</h2></header>
+         <section id="main">
+          <img src="CARROS.gif" alt="carros" width="99%" height="5%" >
+             
+          
+             <nav id="menu"> 
+                  <ul>
+                    <li><a href="GIBRANREIS_TESTE.HTML">Home</a></li>          
+                    <li><a href="GIBRANREIS_TESTE_page2.HTML">Passageiro</a></li>    
+                    <li><a href="GIBRANREIS_TESTE_page3.HTML">Motorista </a></li>             
+                 </ul> 
+            </nav> 
+         </section>   
+   
+        <aside class="aside1"> 
+            
+            <h2>Super Carros</h2>
+         
+        
+            <h4><p>Nosso cliente precisa de uma aplicação web que registre Corridas Compartilhadas oferecidas pela sua empresa em todo o Brasil.</p>
+
+<p>Neste sistema será possível cadastrar motoristas com Nome, Data de Nascimento, CPF, Modelo do carro, Status e Sexo, todos os campos são obrigatórios. </p>
+<p>Quando um motorista entrar em período de férias será possível alterar seu status de Ativo, para Inativo e o sistema deve conter uma consulta aos motoristas já cadastrados.</p>
+<p>Para o cadastro de passageiros o sistema precisa de Nome do Passageiro, Data de Nascimento, CPF e Sexo, todos os campos são obrigatórios. </p>
+    Nosso cliente também precisará consultar os passageiros já cadastrados no sistema.
+<p>Por fim será possível registrar e consultar uma lista de corridas. Para registrar uma corrida será necessário informar qual o motorista, qual o passageiro e o valor da corrida. </p>
+    <p> sistema deve bloquear o registro de corridas para motoristas Inativos.</p> </h4> 
+         </aside>
+         
+        <aside class="aside2"><h2>Desafio Teste Web</h2></aside>
+        
+         
+         
+         <footer>COPYRIGHT BY Gibran Reis ATIVIDADE TESTE WEB</footer>
+     </div>       
+              <script type="text/javascript">
+        alert("Bem Vindo a Pagina do Super Carros! Criada por: Gibran Reis")        
+        
+        </script>
+            
+<script>
+$(document).ready(function(){
+    $("header").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lightblue");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "lightgreen");
+        }, 
+        click: function(){
+            $(this).css("background-color", "yellow");
+        }  
+    });
+});
+</script>
+    
+<script>
+$(document).ready(function(){
+    $("footer").on({
+        mouseenter: function(){
+            $(this).css("background-color", "yellow");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "lightgreen");
+        }, 
+        click: function(){
+            $(this).css("background-color", "red");
+        }  
+    });
+});
+</script>    
+            
+            </body>
+</html>
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: bold;
+    text-align: center;
+    }
+
+.wrapper > *{
+    padding: 49px;
+    flex-grow: 1;
+    flex-basis: 100%;
+    }
+
+
+header{background-color: darkgray;
+       color:black;
+    text-align: center;
+       }
+#main{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+#menu ul{padding: 0px;
+         margin:0px;
+         background-color: orangered;
+          list-style: none;
+         }
+#menu ul li{  display:inline;
+            }
+
+#menu ul li a {
+	padding: 2px 10px;
+	display: inline-block;
+	background-color:#EDEDED;
+	color: #333;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+               }
+
+#menu ul li a:hover {
+	background-color:#D6D6D6;
+	color: #6D6D6D;
+	border-bottom:3px solid #EA0000;
+}
+
+.aside1 {background-color: white;
+    color: black;
+    text-align: left;
+    
+}
+
+.aside2{background-color: darkgray;
+    color: black;
+    text-align: center;
+    
+}
+
+footer{ background-color:black;
+    color: white;
+    padding: 2px 10px;
+}
+
+
+
+@media all and (min-width: 600px) {
+  .aside { 
+      flex-grow: 1;
+      flex-basis:auto; 
+    }
+    .menu{ 
+        flex-grow: 2;
+        flex-basis:auto;
+    }
+}
+
+@media all and (min-width: 800px) {
+  .menu    { flex-grow: 3;
+             flex-basis: 0px;
+   }
+  .aside1 { order: 1; } 
+  .main    { order: 3; }
+  
+  .aside2 { order: 4; }
+  footer  { order: 5; }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!Doctype html>
+	<html lang=”pt-br”>
+		<head>
+			<title>Site The Walking Dead Responsivo</title>
+             <link rel="stylesheet" type="text/css" href="estilo.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        </head>
+        
+        <body>
+     <div class="wrapper">  
+           
+<header> <h2>Site Serviços de Carros Compartilhados Responsivo</h2></header>
+         <section id="main">
+          <img src="CARROS.gif" alt="carros" width="99%" height="5%" >
+             
+          
+             <nav id="menu"> 
+                  <ul>
+                    <li><a href="GIBRANREIS_TESTE.HTML">Home</a></li>          
+                    <li><a href="GIBRANREIS_TESTE_page2.HTML">Passageiro</a></li>    
+                    <li><a href="GIBRANREIS_TESTE_page3.HTML">Motorista </a></li>              
+                 </ul> 
+            </nav> 
+         </section>   
+   
+        <aside class="aside1"> 
+            
+            <h2>Super Carros Cadastro Passageiro</h2>
+         
+    <h3>
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="name">Nome:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="email">Email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+        	<div class="row">
+		<label for="email">Data de Nascimento:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+               	<div class="row">
+		<label for="email">Sexo:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+               	<div class="row">
+		<label for="email">Status:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+        <div class="row">
+		<label for="message">Mensagem:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Enviar" />
+</form>						
+        
+        </h3>
+         </aside>
+         
+        <aside class="aside2"><h2>Desafio Teste Web</h2></aside>
+        
+         
+         
+         <footer>COPYRIGHT BY Gibran Reis ATIVIDADE TESTE WEB</footer>
+     </div>       
+              <script type="text/javascript">
+        alert("Bem Vindo a Pagina do Super Carros! Pagina do Passageiro")        
+        
+        </script>
+            
+             <script>
+$(document).ready(function(){
+    $("header").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lightblue");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "lightgreen");
+        }, 
+        click: function(){
+            $(this).css("background-color", "yellow");
+        }  
+    });
+});
+</script>
+    
+    <script>
+$(document).ready(function(){
+    $("footer").on({
+        mouseenter: function(){
+            $(this).css("background-color", "yellow");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "lightgreen");
+        }, 
+        click: function(){
+            $(this).css("background-color", "red");
+        }  
+    });
+});
+</script>    
+            
+            </body>
+</html>
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!Doctype html>
+	<html lang=”pt-br”>
+		<head>
+			<title>Site The Walking Dead Responsivo</title>
+             <link rel="stylesheet" type="text/css" href="estilo.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        </head>
+        
+        <body>
+     <div class="wrapper">  
+           
+<header> <h2>Site Serviços de Carros Compartilhados Responsivo</h2></header>
+         <section id="main">
+          <img src="CARROS.gif" alt="carros" width="99%" height="5%" >
+             
+          
+             <nav id="menu"> 
+                  <ul>
+                    <li><a href="GIBRANREIS_TESTE.HTML">Home</a></li>          
+                    <li><a href="GIBRANREIS_TESTE_page2.HTML">Passageiro</a></li>    
+                    <li><a href="GIBRANREIS_TESTE_page3.HTML">Motorista </a></li>              
+                 </ul> 
+            </nav> 
+         </section>   
+   
+        <aside class="aside1"> 
+            
+            <h2>Super Carros Cadastro Motorista</h2>
+         
+    <h3>
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="name">Nome:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="email">Email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+        	<div class="row">
+		<label for="email">Data de Nascimento:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+        	<div class="row">
+		<label for="email">CPF:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+          	<div class="row">
+		<label for="email">Modelo do carro:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+          	<div class="row">
+		<label for="email">Status:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+              	<div class="row">
+		<label for="email">Sexo:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="message">Mensagem:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Enviar" />
+</form>						
+        
+        </h3>
+         </aside>
+         
+        <aside class="aside2"><h2>Desafio Teste Web</h2></aside>
+        
+         
+         
+         <footer>COPYRIGHT BY Gibran Reis ATIVIDADE TESTE WEB</footer>
+     </div>       
+              <script type="text/javascript">
+        alert("Bem Vindo a Pagina do Super Carros! Pagina do Motorista")        
+        
+        </script>
+            
+             <script>
+$(document).ready(function(){
+    $("header").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lightblue");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "lightgreen");
+        }, 
+        click: function(){
+            $(this).css("background-color", "yellow");
+        }  
+    });
+});
+</script>
+    
+    <script>
+$(document).ready(function(){
+    $("footer").on({
+        mouseenter: function(){
+            $(this).css("background-color", "yellow");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "lightgreen");
+        }, 
+        click: function(){
+            $(this).css("background-color", "red");
+        }  
+    });
+});
+</script>    
+            
+            </body>
+</html>
